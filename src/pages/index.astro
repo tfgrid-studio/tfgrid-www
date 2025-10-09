@@ -1,16 +1,355 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="TFGrid Studio - Complete Development Platform for ThreeFold Grid">
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
+    <div class="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    
+    <!-- Navigation -->
+    <nav class="relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">TFGrid Studio</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="https://docs.tfgrid.studio" class="text-gray-300 hover:text-white transition">Documentation</a>
+            <a href="https://github.com/tfgrid-studio" class="text-gray-300 hover:text-white transition">GitHub</a>
+            <a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+            <a href="https://docs.tfgrid.studio/getting-started/quickstart" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 text-center">
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6">
+        <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          Deploy to ThreeFold Grid
+        </span>
+        <br />
+        <span class="text-white">
+          as Simply as Docker Compose
+        </span>
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto">
+        Complete development platform for decentralized infrastructure.
+        <span class="text-gray-300">Open source CLI. Enterprise-ready tools. No vendor lock-in.</span>
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a href="https://docs.tfgrid.studio/getting-started/installation" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition transform hover:scale-105 shadow-lg shadow-indigo-500/50">
+          Get Started Free
+        </a>
+        <a href="https://docs.tfgrid.studio" class="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold text-lg transition border border-gray-700">
+          View Documentation
+        </a>
+      </div>
+
+      <!-- Code Example -->
+      <div class="max-w-2xl mx-auto">
+        <div class="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl p-6 text-left shadow-2xl">
+          <div class="flex items-center gap-2 mb-4">
+            <div class="flex gap-2">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <span class="text-gray-500 text-sm ml-auto">tfgrid-compose</span>
+          </div>
+          <pre class="text-gray-300 font-mono text-sm"><code><span class="text-gray-500"># Deploy any application with one command</span>
+<span class="text-purple-400">tfgrid-compose</span> <span class="text-indigo-400">up</span> my-app
+
+<span class="text-gray-500"># That's it! 🎉</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Everything You Need</h2>
+      <p class="text-xl text-gray-400">Build, deploy, and scale on decentralized infrastructure</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Build -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl hover:border-indigo-500/50 transition">
+        <div class="w-12 h-12 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Build</h3>
+        <p class="text-gray-400 mb-4">AI-powered development tools, project templates, and local workflows</p>
+        <ul class="space-y-2 text-gray-500">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            TFGrid AI Agent
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Project templates
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Local development
+          </li>
+        </ul>
+      </div>
+
+      <!-- Deploy -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl hover:border-purple-500/50 transition">
+        <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Deploy</h3>
+        <p class="text-gray-400 mb-4">One-command deployment with multiple patterns and automatic infrastructure</p>
+        <ul class="space-y-2 text-gray-500">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Single-VM pattern
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Gateway pattern (Q4 2025)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            K8s pattern (Q1 2026)
+          </li>
+        </ul>
+      </div>
+
+      <!-- Manage -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl hover:border-pink-500/50 transition">
+        <div class="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center mb-4">
+          <svg class="w-6 h-6 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">Manage</h3>
+        <p class="text-gray-400 mb-4">Web dashboard, monitoring & alerts, and team collaboration</p>
+        <ul class="space-y-2 text-gray-500">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Web dashboard (Coming)
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Monitoring & alerts
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Team collaboration
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div id="pricing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-xl text-gray-400">Start free, scale as you grow</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <!-- Free -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Community</h3>
+        <div class="mb-6">
+          <span class="text-4xl font-bold">$0</span>
+          <span class="text-gray-400">/forever</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-gray-400">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            TFGrid Compose CLI
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            All deployment patterns
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Community support
+          </li>
+        </ul>
+        <a href="https://docs.tfgrid.studio/getting-started/installation" class="block text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition font-medium">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Pro -->
+      <div class="p-8 bg-gradient-to-br from-indigo-900/30 to-purple-900/30 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+          <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">Popular</span>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Pro</h3>
+        <div class="mb-6">
+          <span class="text-4xl font-bold">$50</span>
+          <span class="text-gray-400">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-gray-300">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Everything in Community
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Web dashboard access
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            10 projects
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Priority support
+          </li>
+        </ul>
+        <a href="#" class="block text-center px-4 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">
+          Coming Soon
+        </a>
+      </div>
+
+      <!-- Business -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Business</h3>
+        <div class="mb-6">
+          <span class="text-4xl font-bold">$200</span>
+          <span class="text-gray-400">/month</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-gray-400">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Everything in Pro
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Unlimited projects
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Advanced monitoring
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Team collaboration
+          </li>
+        </ul>
+        <a href="#" class="block text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition font-medium">
+          Coming Soon
+        </a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+        <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+        <div class="mb-6">
+          <span class="text-4xl font-bold">Custom</span>
+        </div>
+        <ul class="space-y-3 mb-8 text-gray-400">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Everything in Business
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            SSO/SAML
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Custom SLA
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Dedicated support
+          </li>
+        </ul>
+        <a href="mailto:enterprise@tfgrid.studio" class="block text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition font-medium">
+          Contact Sales
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="bg-gradient-to-r from-indigo-900/50 to-purple-900/50 rounded-2xl p-12 text-center border border-indigo-500/50">
+      <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
+      <p class="text-xl text-gray-300 mb-8">Deploy your first application in under 5 minutes</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://docs.tfgrid.studio/getting-started/quickstart" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition">
+          Quick Start Guide →
+        </a>
+        <a href="https://github.com/tfgrid-studio" class="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold text-lg transition border border-gray-700">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 mt-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="font-bold">TFGrid Studio</span>
+          </div>
+          <p class="text-gray-400 text-sm">Complete development platform for ThreeFold Grid</p>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="https://docs.tfgrid.studio" class="hover:text-white transition">Documentation</a></li>
+            <li><a href="https://docs.tfgrid.studio/getting-started/quickstart" class="hover:text-white transition">Quick Start</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+            <li><a href="https://docs.tfgrid.studio/roadmap/current" class="hover:text-white transition">Roadmap</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Resources</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="https://github.com/tfgrid-studio" class="hover:text-white transition">GitHub</a></li>
+            <li><a href="https://github.com/tfgrid-studio/tfgrid-compose" class="hover:text-white transition">TFGrid Compose</a></li>
+            <li><a href="https://github.com/tfgrid-studio/tfgrid-ai-agent" class="hover:text-white transition">AI Agent</a></li>
+            <li><a href="https://github.com/orgs/tfgrid-studio/discussions" class="hover:text-white transition">Community</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="https://github.com/tfgrid-studio/tfgrid-compose/blob/main/LICENSE" class="hover:text-white transition">License</a></li>
+            <li><span class="text-gray-500">Apache 2.0 (FOSS)</span></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 TFGrid Studio. Open source under Apache 2.0 License.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>

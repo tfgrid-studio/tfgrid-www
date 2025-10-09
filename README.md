@@ -1,43 +1,80 @@
-# Astro Starter Kit: Minimal
+# TFGrid Studio Website
 
-```sh
-npm create astro@latest -- --template minimal
+**Marketing site for TFGrid Studio - Complete development platform for ThreeFold Grid**
+
+🌐 **Live:** [tfgrid.studio](https://tfgrid.studio)
+
+---
+
+## 🚀 Tech Stack
+
+- **[Astro](https://astro.build)** - Ultra-fast static site generator
+- **[TailwindCSS v4](https://tailwindcss.com)** - Modern utility-first CSS
+- **GitHub Pages** - Free, fast hosting
+
+---
+
+## 🛠️ Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:4321)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## 📦 Deployment
 
-Inside of your Astro project, you'll see the following folders and files:
+Automatically deploys to GitHub Pages on every push to `main`.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+**URLs:**
+- **Production:** `https://tfgrid.studio` (custom domain)
+- **GitHub Pages:** `https://tfgrid-studio.github.io/tfgrid-www/`
+
+---
+
+## 🌐 DNS Setup
+
+To point `tfgrid.studio` to GitHub Pages:
+
+```
+# A records for apex domain
+tfgrid.studio  →  185.199.108.153
+tfgrid.studio  →  185.199.109.153  
+tfgrid.studio  →  185.199.110.153
+tfgrid.studio  →  185.199.111.153
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📄 Site Sections
 
-Any static assets, like images, can be placed in the `public/` directory.
+✅ **Hero** - Gradient background with CTA  
+✅ **Features** - Build, Deploy, Manage (3-column cards)  
+✅ **Pricing** - Community → Pro → Business → Enterprise  
+✅ **CTA** - Get started section  
+✅ **Footer** - Links to docs, GitHub, resources  
 
-## 🧞 Commands
+---
 
-All commands are run from the root of the project, from a terminal:
+## 🔗 Related Repositories
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
+- **[tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)** - CLI tool
+- **[tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)** - AI coding agent
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📝 License
+
+Apache 2.0 License  
+**© 2025 TFGrid Studio**
