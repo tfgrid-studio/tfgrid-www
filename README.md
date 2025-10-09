@@ -2,7 +2,8 @@
 
 **Marketing site for TFGrid Studio - Complete development platform for ThreeFold Grid**
 
-🌐 **Live:** [tfgrid.studio](https://tfgrid.studio)
+🌐 **Live:** [tfgrid.studio](https://tfgrid.studio)  
+🎉 **Status:** Complete First Layer - v2.0.0 (Oct 9, 2025)
 
 ---
 
@@ -60,9 +61,25 @@ tfgrid.studio  →  185.199.111.153
 
 ✅ **Hero** - Gradient background with CTA  
 ✅ **Features** - Build, Deploy, Manage (3-column cards)  
+✅ **Patterns** - single-vm, gateway, k3s (all production-ready)  
 ✅ **Pricing** - Community → Pro → Business → Enterprise  
 ✅ **CTA** - Get started section  
 ✅ **Footer** - Links to docs, GitHub, resources  
+
+## 🎯 Platform Status (v2.0.0)
+
+**Complete First Layer Achieved!**
+
+All 3 core deployment patterns are production-ready:
+- ✅ **single-vm** - Development & internal services
+- ✅ **gateway** - Production web apps with SSL  
+- ✅ **k3s** - Enterprise Kubernetes clusters
+
+**What this means:**
+- Deploy any application type
+- Development → Production → Enterprise scale
+- Competitive with Vercel, Railway, AWS
+- Decentralized, open source, AI-powered  
 
 ---
 
