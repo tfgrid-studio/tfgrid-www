@@ -211,15 +211,16 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Step 1 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/50 rounded-xl p-8">
+          <div class="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/50 rounded-xl p-8 h-full">
             <div class="text-5xl font-bold text-indigo-500 mb-4">1</div>
             <h3 class="text-2xl font-bold mb-3">Install</h3>
-            <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>make install</code></pre>
+            <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>git clone tfgrid-compose
+cd tfgrid-compose
+make install</code></pre>
             <ul class="text-sm text-gray-400 space-y-1 mb-4">
-              <li>• Clone tfgrid-compose repo</li>
-              <li>• Run install command</li>
-              <li>• Adds CLI to your PATH</li>
-              <li>• Ready to deploy!</li>
+              <li>• Clones the repository</li>
+              <li>• Installs CLI to PATH</li>
+              <li>• Verifies dependencies</li>
             </ul>
             <p class="text-indigo-400 font-semibold">⏱️ 1 minute</p>
           </div>
@@ -227,7 +228,7 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Step 2 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/50 rounded-xl p-8">
+          <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/50 rounded-xl p-8 h-full">
             <div class="text-5xl font-bold text-purple-500 mb-4">2</div>
             <h3 class="text-2xl font-bold mb-3">Deploy</h3>
             <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose up tfgrid-ai-agent</code></pre>
@@ -235,7 +236,6 @@ import Layout from '../layouts/Layout.astro';
               <li>• Creates isolated VM</li>
               <li>• Installs dependencies</li>
               <li>• Configures networking</li>
-              <li>• Ready to use!</li>
             </ul>
             <p class="text-purple-400 font-semibold">⏱️ 2 minutes</p>
           </div>
@@ -243,14 +243,13 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Step 3 -->
         <div class="relative">
-          <div class="bg-gradient-to-br from-pink-900/30 to-red-900/30 border border-pink-500/50 rounded-xl p-8">
+          <div class="bg-gradient-to-br from-pink-900/30 to-red-900/30 border border-pink-500/50 rounded-xl p-8 h-full">
             <div class="text-5xl font-bold text-pink-500 mb-4">3</div>
             <h3 class="text-2xl font-bold mb-3">Use</h3>
             <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose ssh tfgrid-ai-agent</code></pre>
             <ul class="text-sm text-gray-400 space-y-1 mb-4">
-              <li>🤖 AI starts coding!</li>
-              <li>• Create projects</li>
-              <li>• Run coding loops</li>
+              <li>• SSH into your VM</li>
+              <li>• AI starts coding</li>
               <li>• Experiment safely</li>
             </ul>
             <p class="text-pink-400 font-semibold">⏱️ Instant</p>
