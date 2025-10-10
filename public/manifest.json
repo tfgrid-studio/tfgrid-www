@@ -1,0 +1,16 @@
+{
+  "name": "TFGrid Studio",
+  "short_name": "TFGrid",
+  "description": "Complete development platform for ThreeFold Grid",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#6366f1",
+  "background_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ]
+}
