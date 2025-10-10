@@ -7,7 +7,8 @@ import Layout from '../layouts/Layout.astro';
   <div class="relative overflow-hidden">
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
-    <div class="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
+    <!-- CSS Grid Pattern (no external file needed) -->
+    <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px); background-size: 50px 50px; mask-image: linear-gradient(180deg, white, rgba(255,255,255,0));"></div>
     
     <!-- Navigation -->
     <nav class="relative">
@@ -37,19 +38,19 @@ import Layout from '../layouts/Layout.astro';
       
       <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6">
         <span class="text-white">
-          Build, Deploy & Scale
+          Deploy Anything.
         </span>
         <br />
         <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-          Decentralized Applications
+          In Minutes. One Command.
         </span>
       </h1>
       
       <p class="text-xl md:text-2xl text-gray-400 mb-4 max-w-3xl mx-auto">
-        From AI-powered coding to production deployment
+        AI agent in 2 minutes. SaaS in 5 minutes. Kubernetes in 10 minutes.
       </p>
       <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
-        Open source CLI • Web dashboard • Marketplace • Enterprise tools
+        Open source • No vendor lock-in • Production ready
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -100,86 +101,487 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
-  <!-- Products Section -->
+  <!-- AI Agent Flagship Section -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-12">
+      <div class="inline-block px-4 py-2 bg-purple-600/20 border border-purple-500/50 rounded-full mb-4">
+        <span class="text-purple-400 font-semibold">🤖 Our Flagship App</span>
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">TFGrid AI Agent</h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+        Your personal AI coding environment. Safe. Isolated. Production-ready.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <!-- Left: Diagram -->
+      <div class="bg-gray-900/50 border border-gray-800 rounded-xl p-8">
+        <h3 class="text-xl font-bold mb-6 text-center">How It Works</h3>
+        <pre class="text-sm text-gray-300 font-mono leading-relaxed"><code>Your Laptop (Safe)
+      ↓ SSH
+┌─────────────────────────────┐
+│ AI Agent VM (Isolated)      │
+│                             │
+│ ✨ Qwen AI Integration      │
+│ 🔄 Loop Technique           │
+│ 📦 Project Management       │
+│ 🔒 No Risk to Local Files   │
+└─────────────────────────────┘</code></pre>
+        <div class="mt-6 p-4 bg-indigo-900/30 border border-indigo-500/50 rounded-lg">
+          <p class="text-sm text-indigo-300 font-mono">$ tfgrid-compose up tfgrid-ai-agent</p>
+          <p class="text-sm text-gray-400 mt-2">✨ Done! AI agent ready in 2 minutes.</p>
+        </div>
+      </div>
+
+      <!-- Right: Features & Benefits -->
+      <div>
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-2xl font-bold mb-4">The Problem</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">❌</span>
+                <span>AI agents can damage your local files</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">❌</span>
+                <span>AI tools require complex setup</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-red-500 mt-1">❌</span>
+                <span>Experimentation feels risky</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-4">The Solution</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">✅</span>
+                <span><strong>Isolated VM environment</strong> - Your laptop stays safe</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">✅</span>
+                <span><strong>Deploy in 2 minutes</strong> - One command, no config</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">✅</span>
+                <span><strong>AI-powered coding</strong> - Qwen integration built-in</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-green-500 mt-1">✅</span>
+                <span><strong>Production-ready</strong> - Tested and verified</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 pt-4">
+            <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-indigo-400">2 min</div>
+              <div class="text-sm text-gray-400">Deploy time</div>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-700 rounded-lg p-4 text-center">
+              <div class="text-2xl font-bold text-indigo-400">$10-30</div>
+              <div class="text-sm text-gray-400">per month</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="https://docs.tfgrid.studio/getting-started/quickstart" class="flex-1 px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition text-center">
+              Try It Now
+            </a>
+            <a href="https://github.com/tfgrid-studio/tfgrid-ai-agent" class="flex-1 px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold transition border border-gray-700 text-center">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works Section -->
+  <div class="bg-gray-900/30 border-y border-gray-800 py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">From Zero to Production in 3 Steps</h2>
+        <p class="text-xl text-gray-400">Total time: 5 minutes. Seriously.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Step 1 -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-indigo-900/30 to-purple-900/30 border border-indigo-500/50 rounded-xl p-8">
+            <div class="text-5xl font-bold text-indigo-500 mb-4">1</div>
+            <h3 class="text-2xl font-bold mb-3">Install</h3>
+            <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>git clone tfgrid-compose
+cd tfgrid-compose
+make install</code></pre>
+            <p class="text-indigo-400 font-semibold">⏱️ 1 minute</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/50 rounded-xl p-8">
+            <div class="text-5xl font-bold text-purple-500 mb-4">2</div>
+            <h3 class="text-2xl font-bold mb-3">Deploy</h3>
+            <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose up tfgrid-ai-agent</code></pre>
+            <ul class="text-sm text-gray-400 space-y-1 mb-4">
+              <li>• Creates isolated VM</li>
+              <li>• Installs dependencies</li>
+              <li>• Configures networking</li>
+              <li>• Ready to use!</li>
+            </ul>
+            <p class="text-purple-400 font-semibold">⏱️ 2 minutes</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-pink-900/30 to-red-900/30 border border-pink-500/50 rounded-xl p-8">
+            <div class="text-5xl font-bold text-pink-500 mb-4">3</div>
+            <h3 class="text-2xl font-bold mb-3">Use</h3>
+            <pre class="text-sm bg-gray-950 p-4 rounded-lg mb-4 text-gray-300 font-mono overflow-x-auto"><code>tfgrid-compose ssh tfgrid-ai-agent</code></pre>
+            <p class="text-sm text-gray-400 mb-4">🤖 AI starts coding! Create projects, run loops, experiment safely.</p>
+            <p class="text-pink-400 font-semibold">⏱️ Instant</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-2xl font-bold text-transparent bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text">
+          Total: 3 minutes from zero to working AI agent
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deployment Patterns - Deep Dive -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-4">The Complete TFGrid Studio Ecosystem</h2>
-      <p class="text-xl text-gray-400">From development to production, we've got you covered</p>
+      <h2 class="text-4xl font-bold mb-4">Three Patterns. Every Use Case Covered.</h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+        From your first prototype to enterprise scale. One tool. Your entire journey.
+      </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-8 mb-16">
-      <!-- TFGrid Compose - Available Now -->
-      <div class="p-8 bg-gradient-to-br from-indigo-900/30 to-purple-900/30 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
-        <div class="absolute -top-3 left-6">
-          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Available Now</span>
+    <div class="space-y-12">
+      <!-- Pattern 1: single-vm -->
+      <div class="bg-gradient-to-br from-indigo-900/20 to-purple-900/20 border border-indigo-500/30 rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <div class="inline-block px-4 py-1 bg-green-600 rounded-full text-sm font-semibold mb-4">✅ Production Ready</div>
+            <h3 class="text-3xl font-bold mb-4">🔹 single-vm Pattern</h3>
+            <p class="text-xl text-gray-300 mb-6">Simple VM deployment for development and internal services</p>
+            
+            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
+              <pre class="text-gray-300"><code>┌──────────────────────────┐
+│    Your Application      │
+│    Private Networking    │
+│    🔒 WireGuard Access   │
+└──────────────────────────┘</code></pre>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-bold mb-2">Perfect For:</h4>
+                <ul class="space-y-1 text-gray-400">
+                  <li>✅ AI agents & coding environments</li>
+                  <li>✅ Databases (PostgreSQL, MongoDB, Redis)</li>
+                  <li>✅ Internal services & APIs</li>
+                  <li>✅ Development environments</li>
+                </ul>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-indigo-400">2-3 min</div>
+                  <div class="text-sm text-gray-400">Deploy time</div>
+                </div>
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-indigo-400">$10-30</div>
+                  <div class="text-sm text-gray-400">per month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3">Example: TFGrid AI Agent</h4>
+            <div class="bg-gray-950 rounded-lg p-4 mb-4">
+              <pre class="text-sm text-indigo-300 font-mono"><code>$ tfgrid-compose up tfgrid-ai-agent \
+  --pattern=single-vm
+
+✨ Deployed! AI agent ready in 2 minutes.</code></pre>
+            </div>
+
+            <blockquote class="border-l-4 border-purple-500 pl-4 italic text-gray-300 mb-6">
+              "I deploy my AI coding environment in 2 minutes. Completely isolated from my laptop. Free to experiment."
+            </blockquote>
+
+            <a href="https://docs.tfgrid.studio/patterns/single-vm" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold transition">
+              View Documentation →
+            </a>
+          </div>
         </div>
-        <div class="w-12 h-12 bg-indigo-600/30 rounded-lg flex items-center justify-center mb-4 mt-2">
-          <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <h3 class="text-2xl font-bold mb-3 text-white">TFGrid Compose</h3>
-        <p class="text-gray-300 mb-4">Docker-compose-like CLI for ThreeFold Grid deployments</p>
-        <ul class="space-y-2 text-gray-400 mb-6">
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            3 production-ready patterns
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Dev → Production → Enterprise
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            SSL + Kubernetes included
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Open source (Apache 2.0)
-          </li>
-        </ul>
-        <a href="https://docs.tfgrid.studio/getting-started/quickstart" class="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold transition">
-          Get Started →
-        </a>
       </div>
 
-      <!-- TFGrid AI Agent - Available Now -->
-      <div class="p-8 bg-gradient-to-br from-purple-900/30 to-pink-900/30 backdrop-blur-sm border border-purple-500/50 rounded-xl relative">
-        <div class="absolute -top-3 left-6">
-          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Available Now</span>
+      <!-- Pattern 2: gateway -->
+      <div class="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <div class="inline-block px-4 py-1 bg-green-600 rounded-full text-sm font-semibold mb-4">✅ Production Ready</div>
+            <h3 class="text-3xl font-bold mb-4">🌐 gateway Pattern</h3>
+            <p class="text-xl text-gray-300 mb-6">Multi-VM with public access and SSL for production web apps</p>
+            
+            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
+              <pre class="text-gray-300"><code>Internet → [Gateway VM] → [Backend VMs]
+          (Public IPv4)   (Private Network)
+          (SSL/TLS)       (Your App + DB)</code></pre>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-bold mb-2">Perfect For:</h4>
+                <ul class="space-y-1 text-gray-400">
+                  <li>✅ Production websites & web apps</li>
+                  <li>✅ E-commerce sites</li>
+                  <li>✅ SaaS applications</li>
+                  <li>✅ Anything needing public HTTPS</li>
+                </ul>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-purple-400">5-7 min</div>
+                  <div class="text-sm text-gray-400">Deploy time</div>
+                </div>
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-purple-400">$30-100</div>
+                  <div class="text-sm text-gray-400">per month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3">Features:</h4>
+            <ul class="space-y-2 text-gray-300 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">🔒</span>
+                <span>Free SSL (Let's Encrypt)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">🌐</span>
+                <span>Public IPv4 included</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">⚖️</span>
+                <span>Load balancing</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">❤️</span>
+                <span>Health checks</span>
+              </li>
+            </ul>
+
+            <div class="bg-gray-950 rounded-lg p-4 mb-4">
+              <pre class="text-sm text-purple-300 font-mono"><code>$ tfgrid-compose up my-saas \
+  --pattern=gateway
+
+✨ Live with SSL in 5 minutes!</code></pre>
+            </div>
+
+            <blockquote class="border-l-4 border-pink-500 pl-4 italic text-gray-300 mb-6">
+              "Deployed my SaaS MVP with SSL in 5 minutes. Serving 1000 users for $50/month total."
+            </blockquote>
+
+            <a href="https://docs.tfgrid.studio/patterns/gateway" class="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition">
+              View Documentation →
+            </a>
+          </div>
         </div>
-        <div class="w-12 h-12 bg-purple-600/30 rounded-lg flex items-center justify-center mb-4 mt-2">
-          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-          </svg>
+      </div>
+
+      <!-- Pattern 3: k3s -->
+      <div class="bg-gradient-to-br from-pink-900/20 to-red-900/20 border border-pink-500/30 rounded-2xl p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <div class="inline-block px-4 py-1 bg-green-600 rounded-full text-sm font-semibold mb-4">✅ Production Ready</div>
+            <h3 class="text-3xl font-bold mb-4">🚀 k3s Pattern</h3>
+            <p class="text-xl text-gray-300 mb-6">Full Kubernetes cluster for cloud-native applications</p>
+            
+            <div class="bg-gray-950 rounded-lg p-6 mb-6 font-mono text-sm">
+              <pre class="text-gray-300"><code>┌──────────────────────────────┐
+│  K3s Kubernetes Cluster      │
+│  ┌────────────────────────┐  │
+│  │  Management Node       │  │
+│  │  (kubectl, helm, k9s)  │  │
+│  └────────────────────────┘  │
+│  ┌────────────────────────┐  │
+│  │  Control + Workers     │  │
+│  │  (MetalLB + Ingress)   │  │
+│  └────────────────────────┘  │
+└──────────────────────────────┘</code></pre>
+            </div>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <h4 class="font-bold mb-2">Perfect For:</h4>
+                <ul class="space-y-1 text-gray-400">
+                  <li>✅ Cloud-native applications</li>
+                  <li>✅ Microservices architectures</li>
+                  <li>✅ Enterprise deployments</li>
+                  <li>✅ Production SaaS at scale</li>
+                </ul>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-pink-400">10-15 min</div>
+                  <div class="text-sm text-gray-400">Deploy time</div>
+                </div>
+                <div class="bg-gray-900/50 rounded-lg p-3 text-center">
+                  <div class="text-xl font-bold text-pink-400">$100-500</div>
+                  <div class="text-sm text-gray-400">per month</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-bold mb-3">Features:</h4>
+            <ul class="space-y-2 text-gray-300 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">☸️</span>
+                <span>Full Kubernetes cluster</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">⚖️</span>
+                <span>MetalLB load balancer</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">🌐</span>
+                <span>Nginx Ingress</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">📈</span>
+                <span>Auto-scaling</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">🛡️</span>
+                <span>HA control plane</span>
+              </li>
+            </ul>
+
+            <div class="bg-gray-950 rounded-lg p-4 mb-4">
+              <pre class="text-sm text-pink-300 font-mono"><code>$ tfgrid-compose up my-cluster \
+  --pattern=k3s
+
+✨ Kubernetes ready in 10 minutes!</code></pre>
+            </div>
+
+            <blockquote class="border-l-4 border-red-500 pl-4 italic text-gray-300 mb-6">
+              "Running 50 microservices on K3s. 10x cheaper than AWS. Zero downtime."
+            </blockquote>
+
+            <a href="https://docs.tfgrid.studio/patterns/k3s" class="inline-block px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded-lg font-semibold transition">
+              View Documentation →
+            </a>
+          </div>
         </div>
-        <h3 class="text-2xl font-bold mb-3 text-white">TFGrid AI Agent</h3>
-        <p class="text-gray-300 mb-4">AI-powered coding agent deployed on ThreeFold Grid</p>
-        <ul class="space-y-2 text-gray-400 mb-6">
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Qwen AI integration
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Automated development
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Isolated VM environment
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Project management
-          </li>
-        </ul>
-        <a href="https://docs.tfgrid.studio/applications/tfgrid-ai-agent" class="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold transition">
-          Learn More →
-        </a>
       </div>
     </div>
+  </div>
 
-    <!-- Coming Soon Products -->
+  <!-- Built on ThreeFold Grid Section -->
+  <div class="bg-gray-900/30 border-y border-gray-800 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-block px-4 py-2 bg-blue-600/20 border border-blue-500/50 rounded-full mb-4">
+            <span class="text-blue-400 font-semibold">Powered by ThreeFold Grid</span>
+          </div>
+          <h2 class="text-3xl font-bold mb-4">Built on Resilient Infrastructure</h2>
+          <p class="text-gray-400 mb-6">
+            TFGrid Studio runs on ThreeFold Grid, a decentralized infrastructure with built-in network resilience.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Mycelium Network</h3>
+                <p class="text-sm text-gray-400">Overlay network providing automatic failover and redundancy</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">WireGuard VPN</h3>
+                <p class="text-sm text-gray-400">Secure, encrypted networking for all private communications</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-blue-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-bold mb-1">Decentralized Infrastructure</h3>
+                <p class="text-sm text-gray-400">No single point of failure. Globally distributed compute.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-950 rounded-xl p-8 border border-gray-800">
+          <h3 class="text-xl font-bold mb-4 text-center">Network Resilience</h3>
+          <div class="space-y-3 text-sm font-mono text-gray-400">
+            <div class="flex items-center justify-between p-3 bg-gray-900 rounded">
+              <span>WireGuard VPN</span>
+              <span class="text-green-400">✓ Active</span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-gray-900 rounded">
+              <span>Mycelium Overlay</span>
+              <span class="text-green-400">✓ Active</span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-gray-900 rounded">
+              <span>Auto-Failover</span>
+              <span class="text-green-400">✓ Enabled</span>
+            </div>
+            <div class="flex items-center justify-between p-3 bg-gray-900 rounded">
+              <span>Redundant Routes</span>
+              <span class="text-green-400">✓ Enabled</span>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-4 text-center">
+            Dual network stack ensures connectivity even if one network fails
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coming Soon: Future Products -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">What's Coming Next</h2>
+      <p class="text-xl text-gray-400">The vision beyond v2.0.0</p>
+    </div>
+
     <div class="grid md:grid-cols-3 gap-8">
       <!-- TFGrid Web -->
       <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl relative">
