@@ -893,13 +893,13 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="grid md:grid-cols-4 gap-6">
       <!-- Free -->
-      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl flex flex-col">
         <h3 class="text-xl font-bold mb-2">Community</h3>
         <div class="mb-6">
           <span class="text-4xl font-bold">$0</span>
           <span class="text-gray-400">/forever</span>
         </div>
-        <ul class="space-y-3 mb-8 text-gray-400">
+        <ul class="space-y-3 mb-8 text-gray-400 flex-grow">
           <li class="flex items-center gap-2">
             <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             TFGrid Compose CLI
@@ -919,7 +919,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Pro -->
-      <div class="p-8 bg-gradient-to-br from-indigo-900/30 to-purple-900/30 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
+      <div class="p-8 bg-gradient-to-br from-indigo-900/30 to-purple-900/30 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative flex flex-col">
         <div class="absolute -top-4 left-1/2 -translate-x-1/2">
           <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">Popular</span>
         </div>
@@ -928,7 +928,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="text-4xl font-bold">$50</span>
           <span class="text-gray-400">/month</span>
         </div>
-        <ul class="space-y-3 mb-8 text-gray-300">
+        <ul class="space-y-3 mb-8 text-gray-300 flex-grow">
           <li class="flex items-center gap-2">
             <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             Everything in Community
@@ -952,13 +952,13 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Business -->
-      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl flex flex-col">
         <h3 class="text-xl font-bold mb-2">Business</h3>
         <div class="mb-6">
           <span class="text-4xl font-bold">$200</span>
           <span class="text-gray-400">/month</span>
         </div>
-        <ul class="space-y-3 mb-8 text-gray-400">
+        <ul class="space-y-3 mb-8 text-gray-400 flex-grow">
           <li class="flex items-center gap-2">
             <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             Everything in Pro
@@ -982,12 +982,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <!-- Enterprise -->
-      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl">
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl flex flex-col">
         <h3 class="text-xl font-bold mb-2">Enterprise</h3>
         <div class="mb-6">
           <span class="text-4xl font-bold">Custom</span>
         </div>
-        <ul class="space-y-3 mb-8 text-gray-400">
+        <ul class="space-y-3 mb-8 text-gray-400 flex-grow">
           <li class="flex items-center gap-2">
             <svg class="w-5 h-5 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             Everything in Business
