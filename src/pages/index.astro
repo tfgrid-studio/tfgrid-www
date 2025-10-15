@@ -590,61 +590,66 @@ import Layout from '../layouts/Layout.astro';
 
     <div class="grid md:grid-cols-3 gap-8">
       <!-- App Registry -->
-      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-green-500/50 rounded-xl relative">
         <div class="absolute -top-3 left-6">
-          <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">🔨 v0.10.0 - Nov 2025</span>
+          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Live Now</span>
         </div>
-        <div class="w-12 h-12 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
-          <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
+          <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
           </svg>
         </div>
         <h3 class="text-xl font-bold mb-3">App Registry</h3>
-        <p class="text-gray-400 text-sm mb-4">Deploy apps by name - Docker-style simplicity</p>
+        <p class="text-gray-400 text-sm mb-4">Browse and discover verified applications</p>
         <ul class="space-y-2 text-gray-300 text-sm">
           <li class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Browse official apps
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Search & filter
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Submit your app
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://registry.tfgrid.studio" target="_blank" class="block w-full text-center px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition font-medium">
+            Browse Registry →
+          </a>
+        </div>
+      </div>
+      <!-- CLI Integration -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-orange-500/50 rounded-xl relative">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-orange-600 text-sm font-semibold rounded-full">🔨 v0.10.0 - Nov 2025</span>
+        </div>
+        <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
+          <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Registry CLI Integration</h3>
+        <p class="text-gray-400 text-sm mb-4">Deploy apps by name with tfgrid-compose</p>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             One-command deployment
           </li>
           <li class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
             Multi-deployment management
           </li>
           <li class="flex items-center gap-2">
-            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Community app ecosystem
+            <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Context switching
           </li>
         </ul>
-        <div class="mt-4 p-3 bg-indigo-900/30 border border-indigo-500/50 rounded-lg">
-          <p class="text-xs text-indigo-300 font-mono">$ tfgrid-compose up tfgrid-ai-agent</p>
+        <div class="mt-4 p-3 bg-orange-900/30 border border-orange-500/50 rounded-lg">
+          <p class="text-xs text-orange-300 font-mono">$ tfgrid-compose up tfgrid-ai-agent</p>
         </div>
-      </div>
-      <!-- TFGrid Web -->
-      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-xl relative">
-        <div class="absolute -top-3 left-6">
-          <span class="px-3 py-1 bg-orange-600 text-sm font-semibold rounded-full">🚧 Q2 2026</span>
-        </div>
-        <div class="w-12 h-12 bg-gray-800 rounded-lg flex items-center justify-center mb-4 mt-2">
-          <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold mb-3">TFGrid Web</h3>
-        <p class="text-gray-400 text-sm mb-4">Visual dashboard for managing deployments</p>
-        <ul class="space-y-2 text-gray-500 text-sm">
-          <li class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Web UI
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Real-time monitoring
-          </li>
-          <li class="flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Team collaboration
-          </li>
-        </ul>
       </div>
 
       <!-- TFGrid Marketplace -->
