@@ -3,7 +3,7 @@
 **Marketing site for TFGrid Studio - Complete development platform for ThreeFold Grid**
 
 🌐 **Live:** [tfgrid.studio](https://tfgrid.studio)  
-🎉 **Status:** Complete First Layer - v2.0.0 (Oct 9, 2025)
+🎉 **Status:** Production Ready - v0.9.0 (Oct 14, 2025)
 
 ---
 
@@ -66,9 +66,9 @@ tfgrid.studio  →  185.199.111.153
 ✅ **CTA** - Get started section  
 ✅ **Footer** - Links to docs, GitHub, resources  
 
-## 🎯 Platform Status (v2.0.0)
+## 🎯 Platform Status (v0.9.0)
 
-**Complete First Layer Achieved!**
+**All 3 Core Patterns Production Ready!**
 
 All 3 core deployment patterns are production-ready:
 - ✅ **single-vm** - Development & internal services
@@ -88,10 +88,11 @@ All 3 core deployment patterns are production-ready:
 - **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
 - **[tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)** - CLI tool
 - **[tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)** - AI coding agent
+- **[app-registry](https://github.com/tfgrid-studio/app-registry)** - Official app registry (v0.10.0+)
 
 ---
 
 ## 📝 License
 
 Apache 2.0 License  
-**© 2025 TFGrid Studio**
+**Copyright 2025 ThreeFold**
