@@ -581,18 +581,51 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
-  <!-- Coming Soon: Future Products -->
+  <!-- TFGrid Ecosystem -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-4">What's Coming Next</h2>
-      <p class="text-xl text-gray-400">The vision beyond v0.9.0</p>
+      <h2 class="text-4xl font-bold mb-4">TFGrid Studio Ecosystem</h2>
+      <p class="text-xl text-gray-400">Integrated tools for your development journey</p>
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
+      <!-- tfgrid-compose CLI -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">✅ v0.9.0</span>
+        </div>
+        <div class="w-12 h-12 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
+          <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">tfgrid-compose</h3>
+        <p class="text-gray-400 text-sm mb-4">Universal deployment orchestrator</p>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            3 deployment patterns
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            OpenTofu/Terraform support
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Production ready
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://docs.tfgrid.studio" target="_blank" class="block w-full text-center px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">
+            Read Docs →
+          </a>
+        </div>
+      </div>
+
       <!-- App Registry -->
       <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-green-500/50 rounded-xl relative">
         <div class="absolute -top-3 left-6">
-          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Live Now</span>
+          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Live</span>
         </div>
         <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
           <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -621,6 +654,50 @@ import Layout from '../layouts/Layout.astro';
           </a>
         </div>
       </div>
+
+      <!-- Documentation -->
+      <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-purple-500/50 rounded-xl relative">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-purple-600 text-sm font-semibold rounded-full">✅ Live</span>
+        </div>
+        <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4 mt-2">
+          <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3">Documentation</h3>
+        <p class="text-gray-400 text-sm mb-4">Comprehensive guides and references</p>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Getting started guides
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            Pattern documentation
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            API reference
+          </li>
+        </ul>
+        <div class="mt-4">
+          <a href="https://docs.tfgrid.studio" target="_blank" class="block w-full text-center px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition font-medium">
+            Browse Docs →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- What's Coming Next -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">What's Coming Next</h2>
+      <p class="text-xl text-gray-400">Building the future of deployment</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
       <!-- CLI Integration -->
       <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-orange-500/50 rounded-xl relative">
         <div class="absolute -top-3 left-6">
