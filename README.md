@@ -3,7 +3,7 @@
 **Marketing site for TFGrid Studio - Complete development platform for ThreeFold Grid**
 
 🌐 **Live:** [tfgrid.studio](https://tfgrid.studio)  
-🎉 **Status:** Production Ready - v0.9.0 (Oct 14, 2025)
+🎉 **Status:** Production Ready - v0.10.1 (Oct 15, 2025)
 
 ---
 
@@ -66,19 +66,28 @@ tfgrid.studio  →  185.199.111.153
 ✅ **CTA** - Get started section  
 ✅ **Footer** - Links to docs, GitHub, resources  
 
-## 🎯 Platform Status (v0.9.0)
+## 🎯 Platform Status (v0.10.1)
 
-**All 3 Core Patterns Production Ready!**
+**Production Ready with Growing App Ecosystem!**
 
-All 3 core deployment patterns are production-ready:
+**Core Patterns (Production Ready):**
 - ✅ **single-vm** - Development & internal services
 - ✅ **gateway** - Production web apps with SSL  
 - ✅ **k3s** - Enterprise Kubernetes clusters
 
+**Official Apps (Production Ready):**
+- ✅ **tfgrid-ai-agent** - AI coding agent with Qwen integration
+- ✅ **tfgrid-gitea** - Self-hosted Git service (NEW!)
+
+**Coming Soon (v0.11.0 - November 2025):**
+- 🔄 **AI Gateway Integration** - Complete workflow: AI creates code → Gitea → Live site
+- 🔄 **Dashboard Web UI** (v0.12.0) - Visual project management
+- 🔄 **Voice Coding** (v0.13.0) - "Vibe code by talking" interface
+
 **What this means:**
 - Deploy any application type
 - Development → Production → Enterprise scale
-- Competitive with Vercel, Railway, AWS
+- Integrated AI development workflow
 - Decentralized, open source, AI-powered  
 
 ---
@@ -88,6 +97,7 @@ All 3 core deployment patterns are production-ready:
 - **[tfgrid-docs](https://github.com/tfgrid-studio/tfgrid-docs)** - Documentation site
 - **[tfgrid-compose](https://github.com/tfgrid-studio/tfgrid-compose)** - CLI tool
 - **[tfgrid-ai-agent](https://github.com/tfgrid-studio/tfgrid-ai-agent)** - AI coding agent
+- **[tfgrid-gitea](https://github.com/tfgrid-studio/tfgrid-gitea)** - Self-hosted Git service
 - **[app-registry](https://github.com/tfgrid-studio/app-registry)** - Official app registry (v0.10.0+)
 
 ---
