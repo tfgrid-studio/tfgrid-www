@@ -1,0 +1,642 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="TFGrid AI Agent - Autonomous AI Coding on ThreeFold Grid">
+	<main class="ai-agent-page">
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="container">
+				<div class="hero-content">
+					<span class="badge">Pre-1.0 • Version 0.3.0</span>
+					<h1>AI Agent</h1>
+					<p class="tagline">Autonomous AI coding assistant running on ThreeFold Grid</p>
+					<p class="description">
+						Deploy an AI coding agent that writes, tests, and refactors code autonomously
+						while you sleep. Powered by Qwen AI, running on decentralized infrastructure.
+					</p>
+					<div class="cta-buttons">
+						<a href="https://docs.tfgrid.studio/guides/ai-agent/" class="button primary">
+							<span>Get Started</span>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+								<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</a>
+						<a href="#demo" class="button secondary">See Demo</a>
+					</div>
+					<div class="stats">
+						<div class="stat">
+							<strong>2-3 min</strong>
+							<span>Deploy time</span>
+						</div>
+						<div class="stat">
+							<strong>$10-30/mo</strong>
+							<span>Estimated cost</span>
+						</div>
+						<div class="stat">
+							<strong>24/7</strong>
+							<span>Availability</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="terminal-window">
+						<div class="terminal-header">
+							<span class="dot red"></span>
+							<span class="dot yellow"></span>
+							<span class="dot green"></span>
+							<span class="title">tfgrid-compose</span>
+						</div>
+						<div class="terminal-content">
+							<p><span class="prompt">$</span> tfgrid-compose up tfgrid-ai-agent</p>
+							<p class="output">✅ VM deployed on ThreeFold Grid</p>
+							<p class="output">✅ Dependencies installed</p>
+							<p class="output">✅ Agent ready</p>
+							<p><span class="prompt">$</span> tfgrid-compose create music-website</p>
+							<p class="output">🚀 AI Agent started</p>
+							<p class="output">📝 Writing code...</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="features">
+			<div class="container">
+				<h2>What It Does</h2>
+				<div class="features-grid">
+					<div class="feature">
+						<div class="feature-icon">🤖</div>
+						<h3>Autonomous Coding</h3>
+						<p>Write complete applications from natural language prompts. The agent plans, codes, tests, and iterates.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🔄</div>
+						<h3>Iterative Loops</h3>
+						<p>Runs continuous improvement cycles. Tests code, fixes errors, refactors, and commits changes automatically.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">⏰</div>
+						<h3>Time-Bounded</h3>
+						<p>Set duration constraints (30m, 2h, indefinite). Agent works within time limits and stops gracefully.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🧪</div>
+						<h3>Test & Debug</h3>
+						<p>Automatically writes tests, runs them, and debugs failures. Ensures code quality before committing.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">📝</div>
+						<h3>Documentation</h3>
+						<p>Generates comprehensive README files, inline comments, and API documentation as it codes.</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🌐</div>
+						<h3>Decentralized</h3>
+						<p>Runs on ThreeFold Grid's decentralized infrastructure. No vendor lock-in, full data ownership.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- How It Works -->
+		<section class="how-it-works">
+			<div class="container">
+				<h2>How It Works</h2>
+				<div class="steps">
+					<div class="step">
+						<div class="step-number">1</div>
+						<h3>Deploy</h3>
+						<p>One command deploys a VM on ThreeFold Grid with all dependencies.</p>
+						<code>tfgrid-compose up tfgrid-ai-agent</code>
+					</div>
+					<div class="step">
+						<div class="step-number">2</div>
+						<h3>Create Project</h3>
+						<p>Describe what you want to build. The agent handles the rest.</p>
+						<code>tfgrid-compose create my-project</code>
+					</div>
+					<div class="step">
+						<div class="step-number">3</div>
+						<h3>Agent Works</h3>
+						<p>AI agent plans, codes, tests, and iterates autonomously.</p>
+						<code>tfgrid-compose monitor my-project</code>
+					</div>
+					<div class="step">
+						<div class="step-number">4</div>
+						<h3>Get Results</h3>
+						<p>Review completed code, docs, and git history. Push to your repo.</p>
+						<code>tfgrid-compose summary my-project</code>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Use Cases -->
+		<section class="use-cases">
+			<div class="container">
+				<h2>Use Cases</h2>
+				<div class="use-cases-grid">
+					<div class="use-case">
+						<h3>🚀 Build MVPs Fast</h3>
+						<p>"Create a task management web app with React and Node.js"</p>
+						<span class="time">→ 2 hours</span>
+					</div>
+					<div class="use-case">
+						<h3>🔧 Code Refactoring</h3>
+						<p>"Refactor this codebase to TypeScript with proper error handling"</p>
+						<span class="time">→ 4 hours</span>
+					</div>
+					<div class="use-case">
+						<h3>📚 Documentation</h3>
+						<p>"Generate comprehensive API docs with examples for all endpoints"</p>
+						<span class="time">→ 1 hour</span>
+					</div>
+					<div class="use-case">
+						<h3>🧪 Test Suites</h3>
+						<p>"Add unit tests and integration tests for the entire codebase"</p>
+						<span class="time">→ 3 hours</span>
+					</div>
+					<div class="use-case">
+						<h3>🎨 UI Prototypes</h3>
+						<p>"Create a modern dashboard UI with charts and real-time data"</p>
+						<span class="time">→ 2 hours</span>
+					</div>
+					<div class="use-case">
+						<h3>🔐 Security Audits</h3>
+						<p>"Review code for security vulnerabilities and fix them"</p>
+						<span class="time">→ Indefinite</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Pricing -->
+		<section class="pricing">
+			<div class="container">
+				<h2>Simple Pricing</h2>
+				<p class="pricing-subtitle">Pay only for what you use on ThreeFold Grid</p>
+				<div class="pricing-card">
+					<div class="pricing-details">
+						<div class="pricing-item">
+							<span>VM (4 CPU, 8GB RAM, 100GB)</span>
+							<strong>$10-30/month</strong>
+						</div>
+						<div class="pricing-item">
+							<span>Qwen AI API</span>
+							<strong>Pay-as-you-go</strong>
+						</div>
+						<div class="pricing-item">
+							<span>tfgrid-compose CLI</span>
+							<strong>Free & Open Source</strong>
+						</div>
+					</div>
+					<div class="pricing-benefits">
+						<h4>Benefits</h4>
+						<ul>
+							<li>✅ No vendor lock-in</li>
+							<li>✅ Data ownership</li>
+							<li>✅ Decentralized infrastructure</li>
+							<li>✅ Stop anytime, pay only what you use</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Demo -->
+		<section id="demo" class="demo">
+			<div class="container">
+				<h2>See It In Action</h2>
+				<div class="demo-video">
+					<div class="video-placeholder">
+						<div class="play-button">
+							<svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+								<circle cx="30" cy="30" r="30" fill="white" opacity="0.9"/>
+								<path d="M24 18L42 30L24 42V18Z" fill="#4F46E5"/>
+							</svg>
+						</div>
+						<p>Demo Coming Soon</p>
+					</div>
+				</div>
+				<div class="demo-examples">
+					<div class="example">
+						<h4>Example Project</h4>
+						<p>Music Website for John Lennon & Mozart</p>
+						<a href="https://github.com/tfgrid-examples/music-website" target="_blank">View on GitHub →</a>
+					</div>
+					<div class="example">
+						<h4>Watch Tutorial</h4>
+						<p>Complete walkthrough from deployment to results</p>
+						<a href="https://docs.tfgrid.studio/guides/ai-agent/" target="_blank">Read Guide →</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="final-cta">
+			<div class="container">
+				<h2>Start Coding with AI</h2>
+				<p>Deploy your AI coding agent on ThreeFold Grid in minutes</p>
+				<div class="cta-buttons">
+					<a href="https://docs.tfgrid.studio/guides/ai-agent/" class="button primary large">Get Started</a>
+					<a href="https://github.com/tfgrid-studio/tfgrid-ai-agent" class="button secondary large">View Source</a>
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	.ai-agent-page {
+		--primary: #4F46E5;
+		--primary-dark: #4338CA;
+		--text: #1F2937;
+		--text-light: #6B7280;
+		--bg: #FFFFFF;
+		--bg-alt: #F9FAFB;
+		--border: #E5E7EB;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 2rem;
+	}
+
+	/* Hero */
+	.hero {
+		padding: 8rem 0 6rem;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+	}
+
+	.hero-content {
+		max-width: 600px;
+	}
+
+	.badge {
+		display: inline-block;
+		padding: 0.5rem 1rem;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 2rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		margin-bottom: 1rem;
+	}
+
+	.hero h1 {
+		font-size: 4rem;
+		font-weight: 800;
+		margin: 0 0 1rem;
+		line-height: 1.1;
+	}
+
+	.tagline {
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+		opacity: 0.9;
+	}
+
+	.description {
+		font-size: 1.125rem;
+		opacity: 0.85;
+		margin-bottom: 2rem;
+	}
+
+	.cta-buttons {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 3rem;
+	}
+
+	.button {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 1rem 2rem;
+		border-radius: 0.5rem;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.2s;
+	}
+
+	.button.primary {
+		background: white;
+		color: var(--primary);
+	}
+
+	.button.secondary {
+		background: rgba(255, 255, 255, 0.2);
+		color: white;
+		border: 2px solid white;
+	}
+
+	.button.large {
+		padding: 1.25rem 2.5rem;
+		font-size: 1.125rem;
+	}
+
+	.stats {
+		display: flex;
+		gap: 3rem;
+	}
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.stat strong {
+		font-size: 1.5rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.stat span {
+		opacity: 0.75;
+		font-size: 0.875rem;
+	}
+
+	/* Terminal */
+	.terminal-window {
+		background: #1e1e1e;
+		border-radius: 0.5rem;
+		overflow: hidden;
+		box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+	}
+
+	.terminal-header {
+		background: #323232;
+		padding: 0.75rem 1rem;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	.dot {
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+	}
+
+	.dot.red { background: #ff5f56; }
+	.dot.yellow { background: #ffbd2e; }
+	.dot.green { background: #27c93f; }
+
+	.terminal-header .title {
+		margin-left: auto;
+		color: #999;
+		font-size: 0.875rem;
+	}
+
+	.terminal-content {
+		padding: 1.5rem;
+		font-family: 'Roboto Mono', monospace;
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+
+	.prompt {
+		color: #4EC9B0;
+	}
+
+	.output {
+		color: #CE9178;
+	}
+
+	/* Features */
+	.features {
+		padding: 6rem 0;
+	}
+
+	.features h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: var(--text);
+	}
+
+	.features-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.feature {
+		text-align: center;
+		padding: 2rem;
+	}
+
+	.feature-icon {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.feature h3 {
+		margin-bottom: 1rem;
+		color: var(--text);
+	}
+
+	.feature p {
+		color: var(--text-light);
+	}
+
+	/* How It Works */
+	.how-it-works {
+		padding: 6rem 0;
+		background: var(--bg-alt);
+	}
+
+	.how-it-works h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 4rem;
+	}
+
+	.steps {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.step {
+		text-align: center;
+		padding: 2rem;
+		background: white;
+		border-radius: 0.5rem;
+	}
+
+	.step-number {
+		width: 50px;
+		height: 50px;
+		background: var(--primary);
+		color: white;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 auto 1rem;
+	}
+
+	.step code {
+		display: block;
+		margin-top: 1rem;
+		padding: 0.75rem 1rem;
+		background: var(--bg-alt);
+		border-radius: 0.25rem;
+		font-size: 0.875rem;
+		font-family: 'Roboto Mono', monospace;
+	}
+
+	/* Use Cases */
+	.use-cases {
+		padding: 6rem 0;
+	}
+
+	.use-cases h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.use-cases-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 2rem;
+	}
+
+	.use-case {
+		padding: 2rem;
+		background: var(--bg-alt);
+		border-radius: 0.5rem;
+		border: 1px solid var(--border);
+	}
+
+	.use-case h3 {
+		margin-bottom: 0.5rem;
+		color: var(--text);
+	}
+
+	.use-case p {
+		color: var(--text-light);
+		font-style: italic;
+		margin-bottom: 1rem;
+	}
+
+	.use-case .time {
+		color: var(--primary);
+		font-weight: 600;
+	}
+
+	/* Pricing */
+	.pricing {
+		padding: 6rem 0;
+		background: var(--bg-alt);
+	}
+
+	.pricing h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.pricing-subtitle {
+		text-align: center;
+		color: var(--text-light);
+		margin-bottom: 3rem;
+	}
+
+	.pricing-card {
+		max-width: 800px;
+		margin: 0 auto;
+		background: white;
+		border-radius: 1rem;
+		padding: 3rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+	}
+
+	.pricing-item {
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem 0;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.pricing-benefits ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.pricing-benefits li {
+		padding: 0.5rem 0;
+	}
+
+	/* Demo */
+	.demo {
+		padding: 6rem 0;
+	}
+
+	.demo h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.video-placeholder {
+		aspect-ratio: 16 / 9;
+		background: var(--bg-alt);
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.demo-examples {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	}
+
+	.example {
+		padding: 2rem;
+		background: var(--bg-alt);
+		border-radius: 0.5rem;
+	}
+
+	.example a {
+		color: var(--primary);
+		text-decoration: none;
+		font-weight: 600;
+	}
+
+	/* Final CTA */
+	.final-cta {
+		padding: 6rem 0;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.final-cta h2 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	.final-cta p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+
+	.final-cta .cta-buttons {
+		justify-content: center;
+	}
+</style>
