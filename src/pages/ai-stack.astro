@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="TFGrid AI Stack - Complete AI Development Environment">
+<Layout title="TFGrid AI Stack - Complete AI Development Environment" description="Complete AI development environment with automatic Git hosting. Deploy AI coding agents, Git repositories, and web interfaces in one command.">
 	<main class="ai-stack-page">
 		<!-- Hero Section -->
 		<section class="hero">
@@ -266,6 +266,43 @@ import Layout from '../layouts/Layout.astro';
 		--bg: #FFFFFF;
 		--bg-alt: #F9FAFB;
 		--border: #E5E7EB;
+	}
+
+	/* Dark mode support */
+	@media (prefers-color-scheme: dark) {
+		.ai-stack-page {
+			--text: #F9FAFB;
+			--text-light: #D1D5DB;
+			--bg: #111827;
+			--bg-alt: #1F2937;
+			--border: #374151;
+		}
+
+		.hero {
+			background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+		}
+
+		.step {
+			background: var(--bg-alt);
+			color: var(--text);
+		}
+
+		.use-case {
+			background: var(--bg-alt);
+			border-color: var(--border);
+		}
+
+		.pricing-card {
+			background: var(--bg-alt);
+		}
+
+		.video-placeholder {
+			background: var(--bg-alt);
+		}
+
+		.example {
+			background: var(--bg-alt);
+		}
 	}
 
 	.container {
