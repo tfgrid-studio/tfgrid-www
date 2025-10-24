@@ -1,0 +1,297 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Official Apps - TFGrid Studio" description="Browse official ThreeFold Grid applications including AI Agent, Gitea, and AI Stack">
+  <!-- Hero Section -->
+  <div class="relative overflow-hidden">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-purple-900/20 to-pink-900/20"></div>
+    <!-- CSS Grid Pattern (no external file needed) -->
+    <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(99, 102, 241, 0.1) 1px, transparent 1px); background-size: 50px 50px; mask-image: linear-gradient(180deg, white, rgba(255,255,255,0));"></div>
+
+    <!-- Navigation -->
+    <nav class="relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-6">
+          <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">TFGrid Studio</span>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="/" class="text-gray-300 hover:text-white transition">Home</a>
+            <a href="https://docs.tfgrid.studio" class="text-gray-300 hover:text-white transition">Documentation</a>
+            <a href="#roadmap" class="text-gray-300 hover:text-white transition">Roadmap</a>
+            <a href="#pricing" class="text-gray-300 hover:text-white transition">Pricing</a>
+            <a href="https://github.com/tfgrid-studio" class="text-gray-300 hover:text-white transition">GitHub</a>
+            <a href="https://docs.tfgrid.studio/getting-started/quickstart" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">Get Started</a>
+          </div>        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32 text-center">
+      <div class="inline-block mb-6 px-4 py-2 bg-indigo-600/20 border border-indigo-500/50 rounded-full">
+        <span class="text-indigo-400 font-semibold">Official Apps</span>
+      </div>
+
+      <h1 class="text-5xl md:text-7xl font-black tracking-tight mb-6">
+        <span class="text-white">
+          Deploy Official
+        </span>
+        <br />
+        <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          ThreeFold Apps
+        </span>
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-400 mb-4 max-w-3xl mx-auto">
+        Browse and deploy verified applications from the TFGrid Studio registry
+      </p>
+      <p class="text-lg text-gray-500 mb-10 max-w-2xl mx-auto">
+        All apps are production-ready and run on decentralized infrastructure
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a href="https://docs.tfgrid.studio/getting-started/installation" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition transform hover:scale-105 shadow-lg shadow-indigo-500/50">
+          Install TFGrid Compose
+        </a>
+        <a href="https://registry.tfgrid.studio" class="px-8 py-4 bg-gray-800 hover:bg-gray-700 rounded-lg font-semibold text-lg transition border border-gray-700">
+          Browse Full Registry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apps Grid -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Official Applications</h2>
+      <p class="text-xl text-gray-400">Three flagship apps powering the ThreeFold ecosystem</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- TFGrid AI Agent -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-indigo-500/50 rounded-xl p-8 relative group hover:border-indigo-400/70 transition">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">✅ Live</span>
+        </div>
+        <div class="w-16 h-16 bg-indigo-600/20 rounded-lg flex items-center justify-center mb-6 mt-2">
+          <svg class="w-8 h-8 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">TFGrid AI Agent</h3>
+        <p class="text-gray-400 text-sm mb-6">Autonomous AI coding assistant that writes, tests, and refactors code while you sleep. Powered by Qwen AI.</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>2-3 min deploy time</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>$10-30/month</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>24/7 autonomous coding</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <a href="/ai-agent" class="block w-full text-center px-4 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg transition font-medium">
+            Learn More
+          </a>
+          <a href="https://docs.tfgrid.studio/guides/ai-agent/" class="block w-full text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition border border-gray-700">
+            Deploy Now
+          </a>
+        </div>
+      </div>
+
+      <!-- TFGrid Gitea -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-green-500/50 rounded-xl p-8 relative group hover:border-green-400/70 transition">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-green-600 text-sm font-semibold rounded-full">✅ Live</span>
+        </div>
+        <div class="w-16 h-16 bg-green-600/20 rounded-lg flex items-center justify-center mb-6 mt-2">
+          <svg class="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5a2 2 0 012-2h4a2 2 0 012 2v2H8V5z" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">TFGrid Gitea</h3>
+        <p class="text-gray-400 text-sm mb-6">Self-hosted Git service with web interface. Perfect for private repositories and code collaboration.</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>5 min deploy time</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>$10-20/month</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>Unlimited private repos</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <a href="https://github.com/tfgrid-studio/tfgrid-gitea" class="block w-full text-center px-4 py-3 bg-green-600 hover:bg-green-700 rounded-lg transition font-medium">
+            View Source
+          </a>
+          <a href="https://docs.tfgrid.studio" class="block w-full text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition border border-gray-700">
+            Documentation
+          </a>
+        </div>
+      </div>
+
+      <!-- TFGrid AI Stack -->
+      <div class="bg-gray-900/50 backdrop-blur-sm border border-purple-500/50 rounded-xl p-8 relative group hover:border-purple-400/70 transition">
+        <div class="absolute -top-3 left-6">
+          <span class="px-3 py-1 bg-purple-600 text-sm font-semibold rounded-full">✅ Live</span>
+        </div>
+        <div class="w-16 h-16 bg-purple-600/20 rounded-lg flex items-center justify-center mb-6 mt-2">
+          <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+        </div>
+        <h3 class="text-2xl font-bold mb-3">TFGrid AI Stack</h3>
+        <p class="text-gray-400 text-sm mb-6">Complete AI development environment with automatic Git hosting. From prompt to production in one deployment.</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>10 min deploy time</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>$15-30/month</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+            <span>AI + Git + Web interface</span>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <a href="/ai-stack" class="block w-full text-center px-4 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition font-medium">
+            Learn More
+          </a>
+          <a href="https://docs.tfgrid.studio/guides/tfgrid-ai-stack/" class="block w-full text-center px-4 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg transition border border-gray-700">
+            Deploy Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TFGrid Ecosystem -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">TFGrid Studio Ecosystem</h2>
+      <p class="text-xl text-gray-400">Integrated tools for your development journey</p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <!-- Main Site (Current) -->
+      <div class="p-6 bg-gray-900/50 border border-indigo-500/50 rounded-xl relative">
+        <div class="absolute -top-2 -right-2">
+          <span class="px-2 py-1 bg-indigo-600 text-xs font-semibold rounded">You are here</span>
+        </div>
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+          <h4 class="font-bold text-indigo-400">TFGrid Studio</h4>
+        </div>
+        <p class="text-sm text-gray-500">tfgrid.studio</p>
+        <p class="text-xs text-gray-600 mt-2">Main platform website</p>
+      </div>
+
+      <!-- Install -->
+      <a href="https://install.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          </svg>
+          <h4 class="font-bold group-hover:text-indigo-400 transition">Install</h4>
+        </div>
+        <p class="text-sm text-gray-500">install.tfgrid.studio</p>
+        <p class="text-xs text-gray-600 mt-2">One-line installer</p>
+      </a>
+
+      <!-- Registry -->
+      <a href="https://registry.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          </svg>
+          <h4 class="font-bold group-hover:text-indigo-400 transition">Registry</h4>
+        </div>
+        <p class="text-sm text-gray-500">registry.tfgrid.studio</p>
+        <p class="text-xs text-gray-600 mt-2">Browse verified apps</p>
+      </a>
+
+      <!-- Docs -->
+      <a href="https://docs.tfgrid.studio" class="group p-6 bg-gray-900/50 border border-gray-800 hover:border-indigo-500/50 rounded-xl transition">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          <h4 class="font-bold group-hover:text-indigo-400 transition">Documentation</h4>
+        </div>
+        <p class="text-sm text-gray-500">docs.tfgrid.studio</p>
+        <p class="text-xs text-gray-600 mt-2">Guides & references</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <svg class="w-6 h-6 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+            <span class="font-bold">TFGrid Studio</span>
+          </div>
+          <p class="text-gray-400 text-sm">Complete development platform for ThreeFold Grid</p>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="/" class="hover:text-white transition">Home</a></li>
+            <li><a href="https://docs.tfgrid.studio" class="hover:text-white transition">Documentation</a></li>
+            <li><a href="/apps" class="hover:text-white transition">Apps</a></li>
+            <li><a href="#roadmap" class="hover:text-white transition">Roadmap</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Apps</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="/ai-agent" class="hover:text-white transition">TFGrid AI Agent</a></li>
+            <li><a href="https://github.com/tfgrid-studio/tfgrid-gitea" class="hover:text-white transition">TFGrid Gitea</a></li>
+            <li><a href="/ai-stack" class="hover:text-white transition">TFGrid AI Stack</a></li>
+            <li><a href="https://registry.tfgrid.studio" class="hover:text-white transition">Full Registry</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="https://github.com/tfgrid-studio/tfgrid-compose/blob/main/LICENSE" class="hover:text-white transition">License</a></li>
+            <li><span class="text-gray-500">Apache 2.0 (FOSS)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+        <p>&copy; 2025 TFGrid Studio</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
