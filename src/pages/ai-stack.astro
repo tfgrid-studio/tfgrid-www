@@ -47,12 +47,12 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 					<div class="cta-buttons">
 						<a href="https://docs.tfgrid.studio/guides/tfgrid-ai-stack/" class="button primary">
-							<span>Get Started</span>
+							<span>Deploy Now</span>
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
 								<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</svg>
 						</a>
-						<a href="#demo" class="button secondary">See Demo</a>
+						<a href="https://github.com/tfgrid-studio/tfgrid-ai-stack" class="button secondary">View Source</a>
 					</div>
 					<div class="stats">
 						<div class="stat">
@@ -242,36 +242,6 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- Demo -->
-		<section id="demo" class="demo">
-			<div class="container">
-				<h2>See It In Action</h2>
-				<div class="demo-video">
-					<div class="video-placeholder">
-						<div class="play-button">
-							<svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-								<circle cx="30" cy="30" r="30" fill="white" opacity="0.9"/>
-								<path d="M24 18L42 30L24 42V18Z" fill="#4F46E5"/>
-							</svg>
-						</div>
-						<p>Live Demo Coming Soon</p>
-						<small>Deploy your own instance in minutes</small>
-					</div>
-				</div>
-				<div class="demo-examples">
-					<div class="example">
-						<h4>Generated Projects</h4>
-						<p>Real examples from tfgrid-ai-stack deployments</p>
-						<a href="https://docs.tfgrid.studio/guides/tfgrid-ai-stack/" target="_blank">View Examples →</a>
-					</div>
-					<div class="example">
-						<h4>Complete Workflow</h4>
-						<p>Step-by-step guide from deployment to results</p>
-						<a href="https://docs.tfgrid.studio/guides/tfgrid-ai-stack/" target="_blank">Read Guide →</a>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<!-- CTA -->
 		<section class="final-cta">
@@ -361,21 +331,20 @@ import Layout from '../layouts/Layout.astro';
 				<div>
 					<h4 class="font-semibold mb-4">Product</h4>
 					<ul class="space-y-2 text-gray-400 text-sm">
-						<li><a href="/" class="hover:text-white transition">Home</a></li>
 						<li><a href="https://docs.tfgrid.studio" class="hover:text-white transition">Documentation</a></li>
-						<li><a href="/apps" class="hover:text-white transition">Apps</a></li>
+						<li><a href="https://docs.tfgrid.studio/getting-started/quickstart" class="hover:text-white transition">Quick Start</a></li>
 						<li><a href="#roadmap" class="hover:text-white transition">Roadmap</a></li>
 						<li><a href="#pricing" class="hover:text-white transition">Pricing</a></li>
 					</ul>
 				</div>
 
 				<div>
-					<h4 class="font-semibold mb-4">Apps</h4>
+					<h4 class="font-semibold mb-4">Resources</h4>
 					<ul class="space-y-2 text-gray-400 text-sm">
-						<li><a href="/ai-agent" class="hover:text-white transition">TFGrid AI Agent</a></li>
-						<li><a href="https://github.com/tfgrid-studio/tfgrid-gitea" class="hover:text-white transition">TFGrid Gitea</a></li>
-						<li><a href="/ai-stack" class="hover:text-white transition">TFGrid AI Stack</a></li>
-						<li><a href="https://registry.tfgrid.studio" class="hover:text-white transition">Full Registry</a></li>
+						<li><a href="https://github.com/tfgrid-studio" class="hover:text-white transition">GitHub</a></li>
+						<li><a href="https://github.com/tfgrid-studio/tfgrid-compose" class="hover:text-white transition">TFGrid Compose</a></li>
+						<li><a href="/apps" class="hover:text-white transition">Apps</a></li>
+						<li><a href="https://github.com/orgs/tfgrid-studio/discussions" class="hover:text-white transition">Community</a></li>
 					</ul>
 				</div>
 
@@ -599,6 +568,7 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 		font-size: 2.5rem;
 		margin-bottom: 4rem;
+		color: var(--text);
 	}
 
 	.steps {
@@ -610,8 +580,19 @@ import Layout from '../layouts/Layout.astro';
 	.step {
 		text-align: center;
 		padding: 2rem;
-		background: white;
+		background: var(--bg);
 		border-radius: 0.5rem;
+		border: 1px solid var(--border);
+	}
+
+	.step h3 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
+	.step p {
+		color: var(--text-light);
+		margin-bottom: 1rem;
 	}
 
 	.step-number {
@@ -636,6 +617,7 @@ import Layout from '../layouts/Layout.astro';
 		border-radius: 0.25rem;
 		font-size: 0.875rem;
 		font-family: 'Roboto Mono', monospace;
+		color: var(--text);
 	}
 
 	/* Use Cases */
@@ -688,6 +670,7 @@ import Layout from '../layouts/Layout.astro';
 		text-align: center;
 		font-size: 2.5rem;
 		margin-bottom: 1rem;
+		color: var(--text);
 	}
 
 	.pricing-subtitle {
@@ -699,12 +682,13 @@ import Layout from '../layouts/Layout.astro';
 	.pricing-card {
 		max-width: 800px;
 		margin: 0 auto;
-		background: white;
+		background: var(--bg);
 		border-radius: 1rem;
 		padding: 3rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 3rem;
+		border: 1px solid var(--border);
 	}
 
 	.pricing-item {
@@ -714,6 +698,19 @@ import Layout from '../layouts/Layout.astro';
 		border-bottom: 1px solid var(--border);
 	}
 
+	.pricing-item span:first-child {
+		color: var(--text-light);
+	}
+
+	.pricing-item strong {
+		color: var(--text);
+	}
+
+	.pricing-benefits h4 {
+		color: var(--text);
+		margin-bottom: 1rem;
+	}
+
 	.pricing-benefits ul {
 		list-style: none;
 		padding: 0;
@@ -721,47 +718,9 @@ import Layout from '../layouts/Layout.astro';
 
 	.pricing-benefits li {
 		padding: 0.5rem 0;
+		color: var(--text-light);
 	}
 
-	/* Demo */
-	.demo {
-		padding: 6rem 0;
-	}
-
-	.demo h2 {
-		text-align: center;
-		font-size: 2.5rem;
-		margin-bottom: 3rem;
-	}
-
-	.video-placeholder {
-		aspect-ratio: 16 / 9;
-		background: var(--bg-alt);
-		border-radius: 1rem;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 2rem;
-	}
-
-	.demo-examples {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 2rem;
-	}
-
-	.example {
-		padding: 2rem;
-		background: var(--bg-alt);
-		border-radius: 0.5rem;
-	}
-
-	.example a {
-		color: var(--primary);
-		text-decoration: none;
-		font-weight: 600;
-	}
 
 	/* Final CTA */
 	.final-cta {
