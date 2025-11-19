@@ -73,12 +73,13 @@ import Layout from '../layouts/Layout.astro';
               <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div class="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <span class="text-gray-500 text-sm ml-auto">tfgrid-compose</span>
+            <span class="text-gray-500 text-sm ml-auto">tfgrid-compose &amp; dashboard</span>
           </div>
           <pre class="text-gray-300 font-mono text-sm"><code><span class="text-gray-500"># Deploy any application with one command</span>
 <span class="text-purple-400">tfgrid-compose</span> <span class="text-indigo-400">up</span> my-app
 
-<span class="text-gray-500"># That's it! 🎉</span></code></pre>
+<span class="text-gray-500"># Or launch the TFGrid Studio Dashboard</span>
+<span class="text-purple-400">t</span> <span class="text-indigo-400">dashboard</span></code></pre>
         </div>
       </div>
     </div>
@@ -591,7 +592,7 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <!-- tfgrid-compose CLI -->
+      <!-- tfgrid-compose CLI + Dashboard -->
       <div class="p-8 bg-gray-900/50 backdrop-blur-sm border border-indigo-500/50 rounded-xl relative">
         <div class="absolute -top-3 left-6">
           <span class="px-3 py-1 bg-indigo-600 text-sm font-semibold rounded-full">✅ v0.9.0</span>
@@ -602,7 +603,7 @@ import Layout from '../layouts/Layout.astro';
           </svg>
         </div>
         <h3 class="text-xl font-bold mb-3">tfgrid-compose</h3>
-        <p class="text-gray-400 text-sm mb-4">Universal deployment orchestrator</p>
+        <p class="text-gray-400 text-sm mb-4">Universal deployment orchestrator &amp; local dashboard</p>
         <ul class="space-y-2 text-gray-300 text-sm">
           <li class="flex items-center gap-2">
             <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
@@ -614,7 +615,7 @@ import Layout from '../layouts/Layout.astro';
           </li>
           <li class="flex items-center gap-2">
             <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-            Production ready
+            CLI &amp; browser dashboard (t dashboard)
           </li>
         </ul>
         <div class="mt-4">
